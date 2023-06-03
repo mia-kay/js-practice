@@ -43,7 +43,54 @@
     document.write("Price: $" + price + "<br>");
     document.write("Discount: " + discount + "<br>");
 
+    
+    //functions
+    function jump (){
+        console.log('Dino jump');
+    }
+    jump ()
 
+    //parameters
+    function addprices (item1, item2, item3) {
+        let totalprice = item1 + item2 + item3
+        console.log(totalprice)
+    }
+    addprices(7,20,10)
+    addprices(90, 100,20)
+
+    //function return
+
+    function addprices (item1, item2){
+        let total = item1 + item2
+        return total;
+    }
+    function tax (totalprice, taxpercentage){
+        let tax = totalprice * taxpercentage
+        return tax;
+    }
+    let total= 
+    addprices(20, 10) + 
+    tax (addprices (20, 10) , 0.5)
+
+    console.log(total);
+   
+
+    //Pre built functions
+    // alert ("connection problem")
+    
+    // let name = prompt ("what is your name?")
+    // console.log(name)
+
+    // let result = confirm ("Are you sure?")
+    // console.log(result)
+
+    //Arrow functions
+
+    const subtract = (num1, num2) => {
+        let total = num1-num2
+        console.log(total)
+    }
+    subtract(20, 12)
 
     </script>
     <script src="../js/myscript.js"></script>
